@@ -37,3 +37,4 @@ FLTK
 *.exe
 *.out
 *.app
+/build

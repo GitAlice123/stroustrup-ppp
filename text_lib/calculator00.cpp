@@ -3,7 +3,7 @@
 // "Software - Principles and Practice using C++" by Bjarne Stroustrup
 //
 
-#include "../std_lib_facilities.h"
+#include "std_lib_facilities.h"
 
 //------------------------------------------------------------------------------
 
