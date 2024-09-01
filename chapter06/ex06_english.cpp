@@ -117,7 +117,7 @@ bool verb()
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-bool conjunction()
+bool Conjunction()
 {
     vector<string> conjunctions = { "and", "or", "but" };
     bool found = false;
@@ -137,7 +137,7 @@ bool conjunction()
 bool sentence()
 {
     if ((noun() || (article() && noun())) && verb()) {
-        if (conjunction())
+        if (Conjunction())
             return sentence();
         else
             return true;

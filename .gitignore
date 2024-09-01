@@ -38,3 +38,4 @@ FLTK
 *.out
 *.app
 /build
+/.vscode

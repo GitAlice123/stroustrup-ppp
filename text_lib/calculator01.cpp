@@ -137,9 +137,10 @@ double primary()     // read and evaluate a Primary
 
 int main()
 try {
-    while (cin)
-        cout << expression() << '\n';
-    keep_window_open("~0");
+    while (cin){
+        auto a=expression();
+        cout << a << '\n';
+    }
 }
 catch (exception& e) {
     cerr << e.what() << endl;

@@ -8,8 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 只需要编译text_lib下的std_lib_facilities.h和calculator00.cpp
 set(SOURCES
-    text_lib/std_lib_facilities.h
-    text_lib/calculator00.cpp
+    chapter06/ex06_english.cpp
 )
 
 # 消息输出，列出所有找到的源文件
@@ -21,7 +20,7 @@ endforeach()
 # 包含头文件目录
 include_directories(.)  # 当前目录作为头文件搜索路径
 # 如果有特定的子目录需要包含，可以添加如下：
-# include_directories(include text_lib)
+include_directories(include text_lib)
 
 # 添加一个可执行文件
 add_executable(${PROJECT_NAME} ${SOURCES})
